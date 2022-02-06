@@ -4,6 +4,39 @@ describe('index.js', function () {
       expect(cats).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
     });
   });
+  const cats = ["Milo", "Otis", "Garfield"];
+  
+  function destructivelyAppendCat() {
+    cats.push("Ralph");
+  }
+
+  function destructivelyPrependCat(){
+    cats.unshift("Bob");
+  }
+
+  function destructivelyRemoveLastCat(){
+    cats.pop();
+  }
+
+  function destructivelyRemoveFirstCat(){
+    cats.shift();
+  }
+
+  function destructivelyAppendCat(){
+    cats.push("Broom");
+}
+
+function destructivelyPrependCat(){
+  cats.pop("Arnold");
+}
+ 
+function destructivelyRemoveLastCat(){
+cats.shift("Milo", "Otis")
+}
+
+function destructivelyRemoveFirstCat(){
+  cats.shift("otis", "Garfield")
+}
 
   describe('Array functions', function () {
     beforeEach(function () {
